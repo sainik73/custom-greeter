@@ -1,0 +1,6 @@
+# Git's ignore file
+*.orig
+.idea
+.iml
+target\*.*
+lib\*.jar

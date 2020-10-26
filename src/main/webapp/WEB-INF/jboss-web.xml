@@ -1,0 +1,4 @@
+
+<jboss-web>
+    <context-root>custom-greeter</context-root>
+</jboss-web>

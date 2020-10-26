@@ -1,0 +1,8 @@
+FROM jboss/wildfly
+MAINTAINER sainik73 <sainik73@gmail.com>
+
+COPY CustomGreeter-1.0.war /opt/jboss/wildfly/standalone/deployments/
+#Run the docker container
+#docker run -p 8888:8080 -p 9990:9990 -it jboss/wildfly /opt/jboss/wildfly/bin/standalone.sh -b 0.0.0.0 -bmanagement 0.0.0.0
+
+HEALTHCHECK --interval=1m --timeout=3s CMD curl -f  --retry 3 --max-time 5 --retry-delay 10 --retry-max-time 20 "http://localhost:8080/custom-greeter/greeter/ping" || exit 1

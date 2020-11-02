@@ -19,12 +19,13 @@ mvn clean verify
 ```
 
 3. Output image `sainik73/custom-greeter` will be created
-
-`D:\Work\Code> docker image list
+```
+D:\Work\Code> docker image list
 
 REPOSITORY                TAG                      IMAGE ID            CREATED             SIZE
 
-sainik73/custom-greeter   latest                   fe58c7b688d5        6 hours ago         702MB`
+sainik73/custom-greeter   latest                   fe58c7b688d5        6 hours ago         702MB
+```
 
 
 4. Run the application on container:
